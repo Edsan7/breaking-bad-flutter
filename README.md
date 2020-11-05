@@ -8,8 +8,8 @@
 
 ## Some Screenshots
 <p align="center">
-    <img src ="https://res.cloudinary.com/edsan/image/upload/v1604611260/breaking-bad/gif/breaking-bad_umyk0z.gif" width="250" />
-    <img src ="https://res.cloudinary.com/edsan/image/upload/v1604611274/breaking-bad/gif/better-call-saul_hkr71y.gif" width="250" />
+    <img src ="https://res.cloudinary.com/edsan/image/upload/v1604611260/breaking-bad/gif/breaking-bad_umyk0z.gif" />
+    <img src ="https://res.cloudinary.com/edsan/image/upload/v1604611274/breaking-bad/gif/better-call-saul_hkr71y.gif" />
 </p>
 <p align="center">
     <img src="https://res.cloudinary.com/edsan/image/upload/v1604601013/breaking-bad/walter-white_wfwmem.png" alt="Walter White" width="200" />
@@ -20,4 +20,4 @@
 
 ## License
 
-    Released under MIT License. See [LICENSE](LICENSE) for more info.
+Released under MIT License. See [LICENSE](https://github.com/Edsan7/breaking-bad-flutter/blob/main/LICENSE) for more info.
