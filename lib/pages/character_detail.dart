@@ -1,4 +1,6 @@
 import 'package:breaking_bad/controllers/character_detail.dart';
+import 'package:breaking_bad/widgets/centered_message.dart';
+import 'package:breaking_bad/widgets/circular_loading.dart';
 import 'package:breaking_bad/widgets/text_info.dart';
 import 'package:breaking_bad/widgets/text_list_view.dart';
 import 'package:flutter/material.dart';
@@ -29,6 +31,7 @@ class _CharacterDetailState extends State<CharacterDetail> {
       _controller.isLoading = true;
     });
     await _controller.fetchCharacterQuote(widget.character.name);
+    await _controller.fetchCharacterDeaths(widget.character.name);
     setState(() {
       _controller.isLoading = false;
     });
@@ -60,6 +63,14 @@ class _CharacterDetailState extends State<CharacterDetail> {
   }
 
   _buildCharacterInfo() {
+    if (_controller.isLoading) {
+      return CircularLoading(
+        valueColor: new AlwaysStoppedAnimation(Colors.green[900]),
+      );
+    }
+    if (_controller.error != null) {
+      return CenteredMessage();
+    }
     return Container(
       margin: EdgeInsets.only(top: 20),
       padding: EdgeInsets.symmetric(horizontal: 10),
@@ -76,6 +87,7 @@ class _CharacterDetailState extends State<CharacterDetail> {
               'Breaking Bad Appearance: ', widget.character.appearance),
           _showAppearance('Better Call Saul Appearance: ',
               widget.character.betterCallSaulAppearance),
+          TextInfo(label: 'Deaths : ${_controller.death.toString()}'),
           _buildQuote()
         ],
       ),
@@ -125,12 +137,8 @@ class _CharacterDetailState extends State<CharacterDetail> {
   }
 
   _buildQuote() {
-    if (_controller.isLoading) {
-      return TextInfo(label: '');
-    }
-    if (_controller.error != null) {
-      return TextInfo(label: _controller.error.message);
-    }
-    return TextInfo(label: 'Quote: ${_controller.characterQuote.quote}');
+    return _controller.quote.isNotEmpty
+        ? TextInfo(label: 'Quote: ${_controller.quote}')
+        : TextInfo(label: '');
   }
 }
