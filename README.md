@@ -8,8 +8,8 @@
 
 ## Some Screenshots
 <p align="center">
-    <img src ="https://res.cloudinary.com/edsan/image/upload/v1604611260/breaking-bad/gif/breaking-bad_umyk0z.gif" />
-    <img src ="https://res.cloudinary.com/edsan/image/upload/v1604611274/breaking-bad/gif/better-call-saul_hkr71y.gif" />
+    <img src ="https://res.cloudinary.com/edsan/image/upload/v1604611260/breaking-bad/gif/breaking-bad_umyk0z.gif?raw=true" />
+    <img src ="https://res.cloudinary.com/edsan/image/upload/v1604611274/breaking-bad/gif/better-call-saul_hkr71y.gif?raw=true" />
 </p>
 <p align="center">
     <img src="https://res.cloudinary.com/edsan/image/upload/v1604601013/breaking-bad/walter-white_wfwmem.png" alt="Walter White" width="200" />
