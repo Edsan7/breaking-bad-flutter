@@ -1,10 +1,8 @@
 # Breaking Bad Characters
 
-    This app retrieves some data about Breaking Bad and Better Call Saul characters,
-    such as: Name, Birthday, the name of the actor who porrays the character, some
-    character especial quote, etc...
-
-    If you like it, please give me a star, it will help me a lot!!!
+This app retrieves some data about Breaking Bad and Better Call Saul characters,
+such as: Name, Birthday, the name of the actor who porrays the character, some
+character especial quote, etc...
 
 ## Some Screenshots
 <p align="center">
